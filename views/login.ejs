@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <h1>Logowanie</h1>
+    </header>
+    <div id = "inputs">
+        <form action = "/login" class = "form" method = "post">
+            <h3>Zaloguj się</h3>
+            <label for = "username">Nazwa użytkownika</label>
+            <br>
+            <input type = "text" name = "username" class = "input">
+            <br>
+            <label for = "password">Hasło</label>
+            <br>
+            <input type = "text" name = "password" class = "input">
+            <br>
+            <input type = "submit" value = "Zaloguj się" class = "button">
+        </form>
+    </div>
+
+    <br>
+    <div id = "popUpError">
+        <%= error %>
+    </div>
+    <br>
+    <div class = "panelButtons">
+        <a href = "/register">Zarejestruj się</a>
+        <a href = "/">Strona główna</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+*
+{
+    font-family: sans-serif;
+}
+
+html
+{
+    background-color: #252525;
+}
+
+.navPanel,
+#panel
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+body
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header
+{
+    color: white;
+    text-align: center;
+}
+
+p, li
+{
+    color: white;
+}
+
+label,
+#popUpError,
+.attempt
+{
+    color: white;
+        
+}
+
+h1, h2, h3
+{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+
+.row
+{
+    display: flex;
+}
+
+.row:first-child
+{
+    background-color: #ff6d01;
+    text-align: center;
+    font-weight: bold;
+}
+
+.image-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+div.center
+{
+    text-align: center;
+}
+
+.row > div
+{
+    width: 50%;
+
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #474747;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+}
+
+article > h3
+{
+    padding-top: 20px;
+}
+
+a, 
+input[type=submit],
+#draw
+{
+    text-decoration: none;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    background-color: #47c7fc;
+}
+
+a:hover,
+input[type=button]:hover,
+input[type=submit]:hover
+{
+    background-color: #fe1872;
+    cursor: pointer;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+div.inputs
+{
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:5px;
+}
+
+div.inputs label
+{
+    text-align:right;
+}
+
+.panelButtons
+{
+    text-align: center;
+}
+
+#canvas
+{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* width: 800px; */
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-color: #2e2e2e;
+}
+
+thead 
+{
+    background-color: #ff6d01;
+    text-align: center;
+    color: white;
+    
+}
+
+th
+{
+    padding: 5px;
+    color: white;
+}
+
+td {
+    background-color: #252525;
+    padding: 5px;
+    color: white;
+}
+
+#game-end
+{
+    color: white;
+    justify-content: center;
+    text-align: center;
+}

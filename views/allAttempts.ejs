@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Wyniki</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="allAttempts">
+        <h1>Wykonane próby</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Nr próby</th>
+                <th>Kąt</th>
+                <th>Prędkość</th>
+                <th>Dystans</th>
+            </tr>
+            <% for(let i = 0; i < IDs.length; i++) {%>
+            <tr>
+                <td><%= i %></td>
+                <td><%= IDs[i].angle %></td>
+                <td><%= IDs[i].speed %></td>
+                <td><%= IDs[i].distance %></td>
+            </tr>
+            <% } %>
+        </thead>
+    </table>
+    <br>
+    <div id = "panel">
+        <a href="<%-url-%>">Strona główna</a>
+    </div>
+</body>
+</html>
